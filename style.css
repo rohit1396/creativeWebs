@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,500&display=swap');
+
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Header Section  */
+
+.header{
+    width: 100%;
+    color: white;
+    background-color: #111;
+}
+
+.navbar-items{
+    height: 70px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-link {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.header_contents {
+    height: 100vh;
+    background: url("./images/header-image.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.header_contents > h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    word-spacing: 5px;
+}
+.header_contents > p {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+    word-spacing: 5px;
+}
+.header_contents > a {
+    width: 200px;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(218, 19, 19);
+    border-radius: 30px;
+    text-decoration: none; 
+}
+
+/* Main Section  */
+
+.showcase {
+    width: 100%;
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img-box > img{
+    width: 300px;
+    object-fit: contain;
+}
+
+.row {
+    width: 90%;
+    height: max-content;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.text-box {
+    width: 40%;
+}
+
+/* ***************************** Media queries **********************************/ 
+@media only screen and (max-width: 400px) {
+    .navbar-link {
+        font-size: 12px;
+    }
+    .header_contents > h1 {
+        font-size: 1.2rem;
+        font-weight: 700;
+        margin-bottom: 15px;
+        word-spacing: 3px;
+    }
+    .header_contents > p {
+        font-size: 1.2rem;
+        font-weight: 500;
+        margin-bottom: 15px;
+        word-spacing: 3px;
+    }
+    .header_contents > a {
+        width: 180px;
+    }
+    .row {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 650px) {
+    .navbar-link {
+        font-size: 15px;
+    }
+    .header_contents > h1 {
+        font-size: 2rem;
+        font-weight: 700;
+    }
+    .header_contents > p {
+        font-size: 2rem;
+        font-weight: 500;
+    }
+    .header_contents > a {
+        width: 150px;
+    }
+    .row {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+}
